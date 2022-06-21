@@ -45,11 +45,19 @@ The EVOLVED-5G facility provides different tools/software to allow the lifecycle
 
 ### SDK
 
-```diff
-- Work in progress
-```
+The Software Development Kit (SDK) is one of the functional blocks of the Workspace, which provides a set of tools to facilitate the development of NetApps for developers. The tools integrated in the SDK are the following: 
 
-### Template
+* A CLI tool, which allows the developer to create the repository for each NetApp from an automated template.
+* NetApp Template, where the developer can find the structure of folders and files that compose the NetApp (code). This template is mainly made up of another tool called cookicutter
+* Libraries that facilitate the interaction of NetApps developers with either an emulator or a real Core 5G, by providing an abstraction towards the use of APIs
+
+
+
+
+
+
+
+###  NetApp Template
 
 ```diff
 - Work in progress
