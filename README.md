@@ -47,29 +47,42 @@ The EVOLVED-5G facility provides different tools/software to allow the lifecycle
 
 The Software Development Kit (SDK) is one of the functional blocks of the Workspace, which provides a set of tools to facilitate the development of NetApps for developers. The tools integrated in the SDK are the following: 
 
-* A CLI tool, which allows the developer to create the repository for each NetApp from an automated NetApp template. Implement 5G Core libraries and launch pipelines for verification purposes.
-* NetApp Template, where the developer can find the structure of folders and files that compose the NetApp (code). This template is mainly made up of another tool called cookicutter
+* A SDK CLI tool, which allows the developer to create the repository for each NetApp from an automated NetApp template. Provide 5G Core libraries and launch pipelines for verification purposes.
+
 * SDK Libraries, that facilitate the interaction of NetApps developers with either our NEF emulator or a real Core 5G, by providing an abstraction towards the use of APIs.
+
+* NetApp Template, where the developer can find the structure of folders and files that compose the NetApp. This template is mainly made up of another tool called Cookiecutter.
+
 
 ###  NetApp Template
 
-```diff
-- Work in progress
-```
+NetApp template is a Github repository, from which you can create a new repository with a folder and file structure. In the NetApp template you can find the structure of a NetApp as well as the files of the Cookiecutter tool.
 
-### NEF emulator  
-
-```diff
-- Work in progress
-```
+Cookiecutter is a Python-based command line tool to create projects from a template. Cookiecutter files are in the NetApp template to run in the SDK to generate the NetApp structure by populating it with the entries requested by Cookiecutter when it runs.  Also, a python script allows to upload the new repository to GitHub.
 
 ### CAPIF tool
 
+The main purpose of CAPIF is to have a unified north bound API framework across several 3GPP functions. There is a single and harmonized approach for API development, with a number of 3GPP specifications on the work – to specify a framework to host APIs of PLMN and also to allow for third parties to leverage the CAPIF framework to host their APIs [Common API Framework](https://www.3gpp.org/common-api-framework-capif).
+
+The CAPIF tool has been developed in the context of EVOLVED-5G for the Verification, Validation and Certification process.
+and certification process. The CAPIF tool is an implementation of the CAPIF APIs for the CAPIF Core entity. This tool implements a REST API server that
+accepts API requests from the CAPIF entities defined as API Invokers, API Exposing Function, API Publishing Function and API Management function.
+Publishing Function and API Management function
+
+
+### NEF emulator  
+
+The Network Function Exposure (NEF) is the Northbound interface between the NEF and the Application Function (AF). It specifies RESTful APIs that allow the AF to access the services and capabilities provided by 3GPP network entities and securely exposed by NEF (https://www.etsi.org/deliver/etsi_ts/129500_129599/129522/16.04.00_60/ts_129522v160400p.pdf).In EVOLVED-5G we have developed and implement a NEF emulator software to emulate the Northbound APIs of 3GPP’s.
+
+It mainly follows the RESTful paradigm and provides NetApps with some of the internal services and capabilities that the 5G System (5GS) offers. NEF emulator provides tools for simulating events (e.g., mobility aware event where UEs are moving in predefined paths).
+
+### Dummy NetApp
+
 ```diff
 - Work in progress
 ```
 
-### Dummy NetApp
+### CI/CD 
 
 ```diff
 - Work in progress
