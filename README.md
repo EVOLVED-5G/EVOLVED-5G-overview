@@ -78,9 +78,7 @@ It mainly follows the RESTful paradigm and provides NetApps with some of the int
 
 ### Dummy NetApp
 
-```diff
-- Work in progress
-```
+Dummy NetApp is a NetApp test that is intended to provide an example to developers of what the NetApp they create within the EVOLVED5G framework should look like. You can find this NetApp example here: [Dummy NetApp](https://github.com/EVOLVED-5G/dummy-netapp)
 
 ### CI/CD 
 
