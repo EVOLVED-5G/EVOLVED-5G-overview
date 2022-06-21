@@ -43,7 +43,7 @@ completion of the verification process, i.e., only after a prove that the NetApp
 
 The EVOLVED-5G facility provides different tools/software to allow the lifecycle of a NetApp. Such software are list as follows:
 
-### SDK-CLI
+### SDK
 
 ```diff
 - Work in progress
