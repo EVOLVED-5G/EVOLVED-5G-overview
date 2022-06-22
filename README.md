@@ -48,9 +48,7 @@ completion of the verification process, i.e., only after a prove that the NetApp
 
 ### Marketplace Environment
 
-```diff
-- Work in progress
-```
+Evolved-5G Marketplace is an online, cross-industry API Marketplace that enables developers, entrepreneurs and businesses to come together to create, discover and integrate services by consuming the NetApps that have been created in the Evolved-5G ecosystem. 
 
 ## Main features
 
