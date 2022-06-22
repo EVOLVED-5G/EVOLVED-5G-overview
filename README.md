@@ -72,7 +72,7 @@ Publishing Function and API Management function
 
 ### NEF emulator  
 
-The Network Function Exposure (NEF) is the Northbound interface between the NEF and the Application Function (AF). It specifies RESTful APIs that allow the AF to access the services and capabilities provided by 3GPP network entities and securely exposed by NEF (https://www.etsi.org/deliver/etsi_ts/129500_129599/129522/16.04.00_60/ts_129522v160400p.pdf).In EVOLVED-5G we have developed and implement a NEF emulator software to emulate the Northbound APIs of 3GPP’s.
+The Network Function Exposure (NEF) is the Northbound interface between the NEF and the Application Function (AF). It specifies RESTful APIs that allow the AF to access the services and capabilities provided by 3GPP network entities and securely exposed by NEF [Network Exposure Function](https://www.etsi.org/deliver/etsi_ts/129500_129599/129522/16.04.00_60/ts_129522v160400p.pdf).In EVOLVED-5G we have developed and implement a NEF emulator software to emulate the Northbound APIs of 3GPP’s.
 
 It mainly follows the RESTful paradigm and provides NetApps with some of the internal services and capabilities that the 5G System (5GS) offers. NEF emulator provides tools for simulating events (e.g., mobility aware event where UEs are moving in predefined paths).
 
@@ -80,8 +80,11 @@ It mainly follows the RESTful paradigm and provides NetApps with some of the int
 
 Dummy NetApp is an example of a NetApp within the EVOLVED-5G framework. It has been implemented to help developers. It implements all the functionalities developed in EVOLVED-5G, i.e., making use of the SDK libraries and following the structure files provided by the NetApp template. The repository can be found here:[Dummy NetApp](https://github.com/EVOLVED-5G/dummy-netapp)
 
-### CI/CD 
+### CI/CD  and Jenkins Pipelines
+Continuous Integration / Continuous Delivery (CI/CD) is a method for delivering applications frequently. For this, automation is applied in the stages of application development. The key concepts attributed to this method are continuous integration, delivery and deployment.
 
-```diff
-- Work in progress
-```
+The NetApp lifecycle in EVOLVED-5G has three phases: Verification, Validation and Certification. Each of these phases will have a separate process supported by CICD tools. 
+
+Evolved5G uses Jenkins as its pipeline automation tool. Jenkins is a free and eopen-source automation server, which helps to automate continuous integration and facilitating continuous delivery. It supports version control tools, including Git. Builds can be triggered by various means, for example by commit in a version control system, by scheduling via a cron-like mechanism and by requesting a specific build URL. It can also be triggered after the other builds in the queue have completed. Jenkins functionality can be extended with plugins.
+
+Pipeline configuration in Jenkins enables to define the whole NetApp lifecycle defined in Evolved5G. The pipeline plugin was built with requirements for a flexible, extensible, and script-based Continous Deployment workflow capability in mind. 
