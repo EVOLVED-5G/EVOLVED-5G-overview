@@ -78,7 +78,7 @@ It mainly follows the RESTful paradigm and provides NetApps with some of the int
 
 ### Dummy NetApp
 
-Dummy NetApp is a NetApp test that is intended to provide an example to developers of what the NetApp they create within the EVOLVED5G framework should look like. You can find this NetApp example here: [Dummy NetApp](https://github.com/EVOLVED-5G/dummy-netapp)
+Dummy NetApp is an example of a NetApp within the EVOLVED-5G framework. It has been implemented to help developers. It implements all the functionalities developed in EVOLVED-5G, i.e., making use of the SDK libraries and following the structure files provided by the NetApp template. The repository can be found here:[Dummy NetApp](https://github.com/EVOLVED-5G/dummy-netapp)
 
 ### CI/CD 
 
