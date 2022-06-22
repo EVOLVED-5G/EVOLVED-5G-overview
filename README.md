@@ -29,9 +29,22 @@ completion of the verification process, i.e., only after a prove that the NetApp
 
 ### Certification Environment
 
-```diff
-- Work in progress
-```
+ This certification environment enables the construction of the certification process. This environment is composed of a set of tools that allow the creation of an Evolved-5G area where all the tools to build the certification process and execute NetApp certifications are integrated. The tools are as follows: 
+
+ * Continuois Integration / Continuous Delivery (CI/CD) process for delivering applications frequently.
+ * The Open Repository to store artifacts.
+ * Jenkins for Pipelines Automation.
+ * Terraform to manage the Infrastructure as Code.
+ * Robot FramekworkFramework to build automated test .
+
+ The Certification process is responsible for certifying that NetApps meet the Eveolved5G criteria defined to consider a NetApp as Evolved5G. This criterion is based on the following principles: 
+
+ * NetApp is secure.
+ * NetApp can be deployed in a cloud infrastructure. 
+ * The NetApp is cloud-native.  
+ * NetApp uses CAPIF APIs to discover and consume APIs. 
+ * NetApp uses NEF APIs to interact with the 5G infrastructure. 
+
 
 ### Marketplace Environment
 
@@ -48,9 +61,7 @@ The EVOLVED-5G facility provides different tools/software to allow the lifecycle
 The Software Development Kit (SDK) is one of the functional blocks of the Workspace, which provides a set of tools to facilitate the development of NetApps for developers. The tools integrated in the SDK are the following: 
 
 * A SDK CLI tool, which allows the developer to create the repository for each NetApp from an automated NetApp template. Provide 5G Core libraries and launch pipelines for verification purposes.
-
 * SDK Libraries, that facilitate the interaction of NetApps developers with either our NEF emulator or a real Core 5G, by providing an abstraction towards the use of APIs.
-
 * NetApp Template, where the developer can find the structure of folders and files that compose the NetApp. This template is mainly made up of another tool called Cookiecutter.
 
 
